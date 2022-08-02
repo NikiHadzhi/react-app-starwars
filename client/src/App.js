@@ -1,7 +1,7 @@
 import { Routes, Route } from 'react-router-dom';
 
 import { AuthProvider } from './context/AuthContext';
-import { useState } from 'react';
+import { CharProvider } from './context/CharContext';
 
 import { Header } from './components/Header/Header';
 import { Footer } from './components/Footer/Footer';
@@ -13,24 +13,17 @@ import { Characters } from './components/Catalog/Characters';
 import './App.css';
 import { Logout } from './components/Logout/Logout';
 import { CharDetails } from './components/CharDetails/CharDetails';
-import { CharContext } from './context/CharContext';
 import { Home } from './components/Home/Home';
 import { Edit } from './components/Edit/Edit';
 import { Delete } from './components/Delete/Delete';
 
 function App() {
-	const [characters, setCharacters] = useState([]);
-
-	const addCharacters = (characters) => {
-		setCharacters(characters);
-	}
-
 	return (
 		<AuthProvider>
 			<div className="App">
 				<Header />
 
-				<CharContext.Provider value={{characters, addCharacters}}>
+				<CharProvider>
 					<div className="main">
 						<Routes>
 							<Route path='/' element={<Home/>} />
@@ -44,7 +37,7 @@ function App() {
 							<Route path='/catalog/details/delete/:charId' element={<Delete />} />
 						</Routes>
 					</div>
-				</CharContext.Provider>
+				</CharProvider>
 
 				<Footer />
 			</div>
