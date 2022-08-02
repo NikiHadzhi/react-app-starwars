@@ -1,6 +1,6 @@
 import { Routes, Route } from 'react-router-dom';
 
-import { AuthContext } from './context/AuthContext';
+import { AuthProvider } from './context/AuthContext';
 import { useState } from 'react';
 
 import { Header } from './components/Header/Header';
@@ -19,24 +19,14 @@ import { Edit } from './components/Edit/Edit';
 import { Delete } from './components/Delete/Delete';
 
 function App() {
-	const [auth, setAuth] = useState({});
 	const [characters, setCharacters] = useState([]);
 
 	const addCharacters = (characters) => {
 		setCharacters(characters);
 	}
 
-	const userLogin = (authData) => {
-		setAuth(authData);
-	}
-
-	const userLogout = () => {
-		localStorage.removeItem('user');
-		setAuth({});
-	}
-
 	return (
-		<AuthContext.Provider value={{ user: auth, userLogin, userLogout }}>
+		<AuthProvider>
 			<div className="App">
 				<Header />
 
@@ -58,7 +48,7 @@ function App() {
 
 				<Footer />
 			</div>
-		</AuthContext.Provider>
+		</AuthProvider>
 	);
 }
 
