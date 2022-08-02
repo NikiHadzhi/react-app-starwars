@@ -1,0 +1,21 @@
+.footer {
+    background-color: rgb(31, 31, 31);
+    padding: 0.1px;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    /* list-style-type: none; */
+    /* text-align: center; */
+    /* color: white; */
+    /* left: 0; */
+    /* margin-top: auto; */
+    /* padding: 3px; */
+    
+}
+
+p {
+    color: white;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 16px;
+}

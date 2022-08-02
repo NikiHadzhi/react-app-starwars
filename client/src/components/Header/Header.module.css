@@ -1,0 +1,48 @@
+header {
+    background-color: rgb(16, 16, 16);
+    list-style-type: none;
+    overflow: hidden;
+    margin: 0px;
+    margin-top: -8px;
+    padding: 2px;
+}
+
+header nav>*{
+    float: right;
+}
+
+.bar {
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    font-size: 22px;
+} 
+
+.bar:hover{
+    background-color: orange;
+}
+
+.active {
+    background-color: orange;
+    display: block;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    text-align: center;
+    padding: 14px 16px;
+    color: white;
+    font-size: 22px;
+}
+
+.greeting{
+    float: left;
+    margin-bottom: -30px;
+    margin-left: 10px;
+}
+
+.greeting p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 22px;
+}
