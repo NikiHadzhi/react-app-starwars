@@ -23,7 +23,7 @@ form {
     width: 100%;
 }
 
-form input {
+form input, .selectMenu {
     height: 40px;
     border-radius: 10px;
     border: none;
@@ -35,11 +35,11 @@ form input {
     background-color: rgb(79, 77, 77);
 }
 
-.btns {
+.btn {
     margin: 15px auto;
 }
 
-button {
+.btn button {
     background-color: rgb(47, 47, 47);
     color: white;
     border: none;
@@ -50,6 +50,12 @@ button {
     margin: 5px 25px;
 }
 
-button:hover {
+.btn button:hover {
     background-color: orange;
+}
+
+.error {
+    color: red;
+    /* margin-bottom: 10px; */
+    margin-top: 0px;
 }

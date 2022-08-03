@@ -17,8 +17,6 @@ export const CharDetails = () => {
             .then(data => setChar(data))
     }, [charId]);
 
-    console.log(user.id);
-    console.log(char._ownerId);
     return (
         <section id="deatils-page">
             <div className={style.wrapper}>

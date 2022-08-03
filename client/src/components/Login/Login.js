@@ -26,6 +26,7 @@ export const Login = () => {
                 userLogin({ id: userData._id, email: userData.email, accessToken: userData.accessToken });
                 navigate('/');
             }).catch(error => {
+                e.target.reset();
                 alert(error.message);
             });
     };

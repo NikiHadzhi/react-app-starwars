@@ -31,6 +31,7 @@ export const Register = () => {
                 })
 
         } catch (error) {
+            e.target.reset();
             alert(error);
         }
     };
