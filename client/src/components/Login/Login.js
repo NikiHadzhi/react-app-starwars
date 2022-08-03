@@ -23,7 +23,7 @@ export const Login = () => {
 
         authService.login(email, password)
             .then(userData => {
-                userLogin({ email: userData.email, accessToken: userData.accessToken });
+                userLogin({ id: userData._id, email: userData.email, accessToken: userData.accessToken });
                 navigate('/');
             }).catch(error => {
                 alert(error.message);

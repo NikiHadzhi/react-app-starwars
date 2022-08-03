@@ -36,8 +36,8 @@ export const CharDetails = () => {
                         </div>
                     </div>
 
-                    {user.email && (
-                        <div class={style.btn}>
+                    {user.id === char._ownerId && (
+                        <div className={style.btn}>
                             <NavLink className={style.edit} to={`/catalog/details/edit/${char._id}`}>Edit</NavLink>
                             <NavLink className={style.delete} to={`/catalog/details/delete/${char._id}`}> Delete </NavLink>
                         </div>
