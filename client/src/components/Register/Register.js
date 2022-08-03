@@ -26,8 +26,7 @@ export const Register = () => {
 
             authService.register(email, password)
                 .then(authData => {
-                    userLogin({email: authData.email, accessToken: authData.accessToken});
-                    e.target.reset();
+                    userLogin({id: authData._id, email: authData.email, accessToken: authData.accessToken});
                     navigate('/');
                 })
 
