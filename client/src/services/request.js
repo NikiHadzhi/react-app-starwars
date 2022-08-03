@@ -34,7 +34,7 @@ async function request(method, url, data){
         }
         
     } catch (error) {
-        alert(error.message);
+         alert(error.message);
         throw error;
     }
 }

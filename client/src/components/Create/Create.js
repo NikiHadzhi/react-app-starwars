@@ -1,11 +1,14 @@
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { useNavigate } from 'react-router-dom';
 import * as request from '../../services/charService';
 import style from './Create.module.css'
 
+import { AuthContext } from '../../context/AuthContext';
+
 export const Create = () => {
     const navigate = useNavigate();
-
+    const { user } = useContext(AuthContext);
+    console.log(user);
     const [values, setValues] = useState({
         name: '',
         height: '',

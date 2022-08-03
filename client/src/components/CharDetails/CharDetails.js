@@ -3,11 +3,13 @@ import { useParams, NavLink } from "react-router-dom";
 import style from './CharDetails.module.css';
 
 import * as request from '../../services/charService';
-import { useEffect, useState } from "react";
+import { useEffect, useState, useContext } from "react";
+import { AuthContext } from "../../context/AuthContext";
 
 export const CharDetails = () => {
     const [char, setChar] = useState({});
     const { charId } = useParams();
+    const { user } = useContext(AuthContext);
 
     useEffect(() => {
         request.getOne(charId)
@@ -17,8 +19,8 @@ export const CharDetails = () => {
 
     return (
         <section id="deatils-page">
-            <div class={style.wrapper}>
-                <div class={style.image}>
+            <div className={style.wrapper}>
+                <div className={style.image}>
                     <img className={style.image} src={char.imgUrl} alt="Loading..." />
                 </div>
                 <div class={style.info}>
@@ -34,10 +36,13 @@ export const CharDetails = () => {
                         </div>
                     </div>
 
-                    <div class={style.btn}>
-                        <NavLink className={style.edit} to={`/catalog/details/edit/${char._id}`}>Edit</NavLink>
-                        <NavLink className={style.delete} to={`/catalog/details/delete/${char._id}`}> Delete </NavLink>
-                    </div>
+                    {user.email && (
+                        <div class={style.btn}>
+                            <NavLink className={style.edit} to={`/catalog/details/edit/${char._id}`}>Edit</NavLink>
+                            <NavLink className={style.delete} to={`/catalog/details/delete/${char._id}`}> Delete </NavLink>
+                        </div>
+                    )}
+
                 </div>
             </div>
         </section>
