@@ -14,7 +14,7 @@ export const Create = () => {
         imgUrl: '',
         hairColor: '',
         eyeColor: '',
-        gender: ''
+        gender: 'male'
     });
 
     const changeHandler = (e) => {
@@ -28,14 +28,15 @@ export const Create = () => {
         e.preventDefault();
 
         try {
-            if (Object.values(values).some(x => x === '')){
+            if (Object.values(values).some(x => x === '')) {
                 throw new Error();
             }
-    
+
             await request.createOne(values);
             navigate('/catalog');
+
         } catch (error) {
-            alert('All fields are required!')
+            alert('All fields are required!');
         }
     };
 
@@ -68,7 +69,6 @@ export const Create = () => {
                 break;
 
             default: console.log('default');
-
         }
     }
 
@@ -170,7 +170,11 @@ export const Create = () => {
                         </p>
                     }
                     <label htmlFor="gender">Gender:</label>
-                    <select className={style.selectMenu} name="gender">
+                    <select
+                        className={style.selectMenu}
+                        name="gender"
+                        onChange={changeHandler}
+                    >
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                     </select>

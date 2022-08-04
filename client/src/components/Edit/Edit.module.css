@@ -53,3 +53,26 @@ button {
 button:hover {
     background-color: orange;
 }
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+form input, .selectMenu {
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin: 10px;
+    text-align: left;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(79, 77, 77);
+}
+
+.error {
+    color: red;
+    margin-top: 0px;
+}
