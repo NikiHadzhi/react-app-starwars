@@ -26,9 +26,17 @@ export const Create = () => {
 
     const submitHandler = async (e) => {
         e.preventDefault();
-        console.log('logged');
-        await request.createOne(values);
-        navigate('/catalog');
+
+        try {
+            if (Object.values(values).some(x => x === '')){
+                throw new Error();
+            }
+    
+            await request.createOne(values);
+            navigate('/catalog');
+        } catch (error) {
+            alert('All fields are required!')
+        }
     };
 
     //validations 
@@ -63,6 +71,7 @@ export const Create = () => {
 
         }
     }
+
     const isAllDataValid = Object.values(errors).some(x => x);
 
 
