@@ -1,0 +1,28 @@
+.container {
+    margin: 0
+}
+
+.emptyContainer {
+    text-align: center;
+}
+
+.emptyContainer p {
+    color: white;
+    font-size: 40px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+}
+
+.link {
+    color: white;
+    font-size: 35px;
+    text-decoration: none;
+    position: absolute;
+    top: 55%;
+    left: 38%;
+}
+
+.link:hover {
+    color: orange;
+}

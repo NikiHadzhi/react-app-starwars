@@ -23,9 +23,9 @@ export const CharDetails = () => {
                 <div className={style.image}>
                     <img className={style.image} src={char.imgUrl} alt="Loading..." />
                 </div>
-                <div class={style.info}>
-                    <div class={style.text}>
-                        <div class={style.text}>
+                <div className={style.info}>
+                    <div className={style.text}>
+                        <div className={style.text}>
                             <h1>{char.name}</h1>
                             <h3>Height: {char.height}</h3>
                             <h3>Mass: {char.mass}</h3>

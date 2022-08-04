@@ -40,7 +40,6 @@ export const Header = () => {
                         : <p>Welcome, young padawan</p>
                     }
                 </div>
-
             </nav>
         </header>
     )

@@ -1,14 +1,12 @@
 .App {
-  /* background-image: url('../public/starWars.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
-  background-color: white;
+  background-image: url('../public/stars.jpg');
+  /* background-repeat: no-repeat; */
+  background-size: cover;
   margin-left: -8px;
   margin-right: -8px;
+  
 }
 
 .main{
-  min-height: 83.2vh; 
+  min-height: 88.8vh;
 }
-
