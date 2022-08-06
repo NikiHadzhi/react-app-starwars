@@ -1,19 +1,19 @@
 .wrapper {
-    height: 550px;
-    width: 1000px;
+    height: 530px;
+    width: 1150px;
     margin: auto;
     margin-top: 5%;
-    border-radius: 7px 7px 7px 7px;
-    box-shadow: 0px 0px 3px 10px orange;
+    border-radius: 20px;
+    box-shadow: 0px 0px 25px 7px orange;
     background-color: rgb(42, 42, 42);
 }
 
 .image {
     float: left;
-    margin-left: 5px;
+    margin-left: 10px;
     margin-top: 15px;
-    height: 100%;
-    width: 600px;
+    height: 105%;
+    width: 700px;
 }
 
 .image img {
@@ -25,7 +25,7 @@
     float: right;
     height: auto;
     width: 380px;
-    margin-right: 0px;
+    margin-right: 50px;
     margin-top: 10px;
     border-radius: 12px;
     background-color: rgb(42, 42, 42);
@@ -40,7 +40,7 @@
 .text h1 {
     margin: -35px 0 0 17px;
     padding-top: 52px;
-    font-size: 28px;
+    font-size: 30px;
     color: white;
 }
 
@@ -54,50 +54,50 @@
 }
 
 .text>p {
+    text-align: left;
     height: auto;
-    margin: 40px 0 0 58px;
-    width: 100%;
+    margin: 20px 0 0 15px;
+    width: 120%;
     font-family: Arial, Helvetica, sans-serif;
-    color: #5f5a5a;
-    line-height: 1.6em;
+    color: #aaa9a9;
+    line-height: 1.5em;
     margin-bottom: auto;
-    font-size: 21px;
+    font-size: 19px;
     font-weight: lighter;
-    overflow: hidden;
 }
 
-.btn {
-    text-align: center;
-    margin-top: 100px;
-    margin-left: 120px;
-    position: relative;
-}
-
-span {
+.btns {
     display: inline-block;
-    height: 50px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 34px;
+    text-align: center;
+    margin-top: 245px;
+    margin-left: 85px;
 }
 
-.btn .edit, .delete{
+.edit {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    font-weight: 600;
+    padding: 12px 45px;
     height: auto;
     width: auto;
-    align-items: center;
-    padding: 10px;
     border-radius: 60px;
-    justify-content: space-around;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 15px;
-    font-weight: 600;
-    letter-spacing: 0.1em;
+    font-size: 20px;
     color: black;
-    display: block;
-    margin-left: 0px;
-    margin-right: 120px;
-    margin-bottom: 10px;
-    background-color: gray;
+}
+
+.delete {
     text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: gray;
+    font-weight: 600;
+    padding: 12px 30px;
+    height: auto;
+    width: auto;
+    border-radius: 60px;
+    font-size: 20px;
+    color: black;
+    margin-left: 10px;
 }
 
 .edit:hover {

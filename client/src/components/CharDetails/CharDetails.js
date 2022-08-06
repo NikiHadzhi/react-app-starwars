@@ -28,16 +28,14 @@ export const CharDetails = () => {
                         <div className={style.text}>
                             <h1>{char.name}</h1>
                             <h3>Height: {char.height}</h3>
-                            <h3>Mass: {char.mass}</h3>
-                            <h3>Hair color: {char.hairColor}</h3>
-                            <h3>Eyes color: {char.eyeColor}</h3>
+                            <h3>Species: {char.species}</h3>
                             <h3>Gender: {char.gender}</h3>
-                            <p>Description: TODO!</p>
+                            <p>Description: {char.description}</p>
                         </div>
                     </div>
 
                     {user.id === char._ownerId && (
-                        <div className={style.btn}>
+                        <div className={style.btns}>
                             <NavLink className={style.edit} to={`/catalog/details/edit/${char._id}`}>Edit</NavLink>
                             <NavLink className={style.delete} to={`/catalog/details/delete/${char._id}`}> Delete </NavLink>
                         </div>

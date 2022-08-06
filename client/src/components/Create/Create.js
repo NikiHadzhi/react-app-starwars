@@ -10,11 +10,10 @@ export const Create = () => {
     const [values, setValues] = useState({
         name: '',
         height: '',
-        mass: '',
         imgUrl: '',
-        hairColor: '',
-        eyeColor: '',
-        gender: 'male'
+        species: '',
+        gender: 'male',
+        description: ''
     });
 
     const changeHandler = (e) => {
@@ -82,7 +81,6 @@ export const Create = () => {
                 <form onSubmit={submitHandler}>
                     <label htmlFor="name">Name:</label>
                     <input
-                        id="name"
                         type="text"
                         name="name"
                         value={values.name}
@@ -97,7 +95,6 @@ export const Create = () => {
                     }
                     <label htmlFor="height">Height:</label>
                     <input
-                        id="height"
                         type="number"
                         name="height"
                         value={values.height}
@@ -110,18 +107,17 @@ export const Create = () => {
                             Height cannot be empty or negative number!
                         </p>
                     }
-                    <label htmlFor="mass">Mass:</label>
+                    <label htmlFor="species">Species:</label>
                     <input
-                        id="mass"
-                        type="number"
-                        name="mass"
-                        value={values.mass}
+                        type="text"
+                        name="species"
+                        value={values.species}
                         onChange={changeHandler}
-                        onBlur={(e) => validator(e, 'number')}
-                        placeholder="90" />
-                    {errors.mass &&
+                        onBlur={(e) => validator(e, 'length')}
+                        placeholder="human" />
+                    {errors.species &&
                         <p className={style.error}>
-                            Mass cannot be empty or negative number!
+                            Species should be at least 4 characters long!
                         </p>
                     }
                     <label htmlFor="image">Image:</label>
@@ -139,36 +135,6 @@ export const Create = () => {
                             Url is not correct!
                         </p>
                     }
-                    <label htmlFor="hairColor">Hair color:</label>
-                    <input
-                        id="hairColor"
-                        type="text"
-                        name="hairColor"
-                        value={values.hairColor}
-                        onChange={changeHandler}
-                        onBlur={(e) => validator(e, 'length')}
-                        placeholder="Blond"
-                    />
-                    {errors.hairColor &&
-                        <p className={style.error}>
-                            Invalid hair color!
-                        </p>
-                    }
-                    <label htmlFor="eyes">Eyes color:</label>
-                    <input
-                        id="eyes"
-                        type="text"
-                        name="eyeColor"
-                        value={values.eyeColor}
-                        onChange={changeHandler}
-                        onBlur={(e) => validator(e, 'length')}
-                        placeholder="Blue"
-                    />
-                    {errors.eyeColor &&
-                        <p className={style.error}>
-                            Invalid eyes color!
-                        </p>
-                    }
                     <label htmlFor="gender">Gender:</label>
                     <select
                         className={style.selectMenu}
@@ -178,6 +144,21 @@ export const Create = () => {
                         <option value="male">Male</option>
                         <option value="female">Female</option>
                     </select>
+                    <label htmlFor="description">Description:</label>
+                    <textarea
+                        className={style.description}
+                        type="text"
+                        name="description"
+                        value={values.description}
+                        onChange={changeHandler}
+                        onBlur={(e) => validator(e, 'length')}
+                        placeholder="Once the heroic Jedi Knight..."
+                    />
+                    {errors.description &&
+                        <p className={style.error}>
+                            Field is required!
+                        </p>
+                    }
                     <div className={style.btn}>
                         <button type="submit" disabled={isAllDataValid}>Create</button>
                     </div>
