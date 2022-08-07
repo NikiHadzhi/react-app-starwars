@@ -38,13 +38,13 @@ export const CharDetails = () => {
             await request.like({ charId });
         } else if (e.target.name === 'dislike') {
             const data = await request.getLikesId(charId);
-            const idOfLike = data[0]?._id
+            const likeOfUser = data.find(x => x._ownerId === user.id);
 
-            if (idOfLike !== undefined) {
-                await request.dislike(idOfLike);
+            if (likeOfUser) {
+                await request.dislike(likeOfUser._id);
             };
         }
-
+        
         const publicationsLikeData = await request.getLikes(charId);
         setPublicationLikes(publicationsLikeData);
     }
