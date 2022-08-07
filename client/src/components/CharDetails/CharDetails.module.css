@@ -66,19 +66,26 @@
     font-weight: lighter;
 }
 
-.btns {
+.btns{
     display: inline-block;
     text-align: center;
     margin-top: 245px;
     margin-left: 85px;
 }
 
-.edit {
+.actionBtns{
+    display: inline-block;
+    text-align: center;
+    margin-top: 225px;
+    margin-left: 130px;
+}
+
+.edit, .like, .dislike {
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     background-color: gray;
     font-weight: 600;
-    padding: 12px 45px;
+    padding: 12px 30px;
     height: auto;
     width: auto;
     border-radius: 60px;
@@ -106,4 +113,12 @@
 
 .delete:hover {
     background-color: orange;
+}
+
+.like:hover {
+    background-color: rgb(27, 231, 27);
+}
+
+.dislike:hover {
+    background-color: rgb(221, 35, 35);
 }
