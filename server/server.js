@@ -1333,7 +1333,7 @@
         }
     };
     var seedData = {
-        char: {
+        characters: {
             "ff436770-76c5-40e2-b231-77409eda7a61": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
                 "name": "Obi-Wan Kenobi",
@@ -1341,7 +1341,8 @@
                 "species": "human",
                 "gender": "male",
                 "imgUrl": "https://www.liveabout.com/thmb/ReQNQdB6nD0eyGqg4TGS8qaHjlA=/1387x1040/smart/filters:no_upscale()/EP2-IA-60435_R_8x10-56a83bea3df78cf7729d314a.jpg",
-                "description": "A legendary Jedi Master, Obi-Wan Kenobi was a noble man and gifted in the ways of the Force. He trained Anakin Skywalker, served as a general in the Republic Army during the Clone Wars, and guided Luke Skywalker as a mentor."
+                "description": "A legendary Jedi Master, Obi-Wan Kenobi was a noble man and gifted in the ways of the Force. He trained Anakin Skywalker, served as a general in the Republic Army during the Clone Wars, and guided Luke Skywalker as a mentor.",
+                "_createdOn": 1617194128618
             },
             "1840a313-225c-416a-817a-9954d4609f7c": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
@@ -1350,28 +1351,34 @@
                 "species": "human",
                 "gender": "male",
                 "imgUrl": "https://www.thedigitalfix.com/wp-content/uploads/2022/04/Star-Wars-Darth-Vader.jpeg",
-                "description": "Once the heroic Jedi Knight named Anakin Skywalker, Darth Vader was seduced by the dark side of the Force. Forever scarred by his defeat on Mustafar, Vader was transformed into a cybernetically-enhanced Sith Lord. At the dawn of the Empire, Vader led the Empire's eradication of the Jedi Order and the search for survivors."
+                "description": "Once the heroic Jedi Knight named Anakin Skywalker, Darth Vader was seduced by the dark side of the Force. Forever scarred by his defeat on Mustafar, Vader was transformed into a cybernetically-enhanced Sith Lord. At the dawn of the Empire, Vader led the Empire's eradication of the Jedi Order and the search for survivors.",
+                "_createdOn": 1617194210725
             },
             "126777f5-3277-42ad-b874-76d043b069cb": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                 "name": "Anakin Skywalker",
+                "name": "Anakin Skywalker",
                 "height": "188",
                 "species": "human",
                 "gender": "male",
                 "imgUrl": "https://www.pedestrian.tv/wp-content/uploads/2020/12/11/Anakin-Skywalker.jpg",
-                "description": "Discovered as a slave on Tatooine by Qui-Gon Jinn and Obi-Wan Kenobi, Anakin Skywalker had the potential to become one of the most powerful Jedi ever. Some even believed he was the prophesied Chosen One who would bring balance to the Force."
+                "description": "Discovered as a slave on Tatooine by Qui-Gon Jinn and Obi-Wan Kenobi, Anakin Skywalker had the potential to become one of the most powerful Jedi ever. Some even believed he was the prophesied Chosen One who would bring balance to the Force.",
+                "_createdOn": 1617194210875
             },
+
             "12612377f5-3333-42ad-b874-76d043b069cb": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
-                 "name": "R2-D2",
+                "name": "R2-D2",
                 "height": "96",
                 "species": "droid",
                 "gender": "none",
                 "imgUrl": "https://lumiere-a.akamaihd.net/v1/images/r2-d2-main_f315b094.jpeg?region=273%2C0%2C951%2C536",
-                "description" : "A reliable and versatile astromech droid, R2-D2 has served Padmé Amidala, Anakin Skywalker, and Luke Skywalker in turn, showing great bravery in rescuing his masters and their friends from many perils. A skilled starship mechanic and fighter pilot's assistant, he has an unlikely but enduring friendship with the fussy protocol droid C-3PO."
+                "description" : "A reliable and versatile astromech droid, R2-D2 has served Padmé Amidala, Anakin Skywalker, and Luke Skywalker in turn, showing great bravery in rescuing his masters and their friends from many perils. A skilled starship mechanic and fighter pilot's assistant, he has an unlikely but enduring friendship with the fussy protocol droid C-3PO.",
+                "_createdOn": 1617194210987
             },
         },
-        likes :{}
+        likes :{
+
+        }
     };
     var rules$1 = {
         users: {

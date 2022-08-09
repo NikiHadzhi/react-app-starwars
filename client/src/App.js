@@ -26,13 +26,13 @@ function App() {
 				<CharProvider>
 					<div className="main">
 						<Routes>
-							<Route path='/' element={<Home/>} />
+							<Route path='/' element={<Home />} />
 							<Route path='/create' element={<Create />} />
 							<Route path='/register' element={<Register />} />
 							<Route path='/login' element={<Login />} />
 							<Route path='/logout' element={<Logout />} />
 							<Route path='/catalog' element={<Characters />} />
-							<Route path='/catalog/details/:charId' element={<CharDetails />} />
+							<Route path='/catalog/details/:charId' element={<CharDetails /> } /> 
 							<Route path='/catalog/details/edit/:charId' element={<Edit />} />
 							<Route path='/catalog/details/delete/:charId' element={<Delete />} />
 						</Routes>
