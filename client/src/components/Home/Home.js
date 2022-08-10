@@ -1,31 +1,31 @@
 import style from './Home.module.css'
 
 import * as request from '../../services/charService';
-import { useContext, useEffect, useState } from 'react';
-import { CharContext } from '../../context/CharContext'
+import {  useEffect, useState } from 'react';
+// import { CharContext } from '../../context/CharContext'
+import { RecentlyAdded } from './RecentlyAdded/RecentlyAdded';
+import { Search } from './Search/Search';
 
 export const Home = () => {
     // const { characters } = useContext(CharContext);
-    // const [chars, setChar] = useState({});
+    const [characters, setCharacters] = useState([]);
 
-    // // console.log(characters);
-    // useEffect(() => {
-    //     const data = async () => {
-    //         const res = await request.getMostLiked();
-    //         const test = res.forEach(x => console.log(x))
-    //     }
-
-    //     data();
-    // }, [setChar])
-
-
-
-
-
+    useEffect(() => {
+        request.getRecentlyAdded()
+            .then(res=>res)
+            .then(data => setCharacters(data));
+    },[])
 
     return (
         <div className={style.homeContainer}>
             <img className={style.imageBox} src="../../star-wars-logo.png" alt="Loading..." />
+            <div>
+                <div>
+                    <Search/>
+                    {/* <h1>Recently added:</h1> */}
+                    {/* {characters.map(x => (<RecentlyAdded key={x._id} character={x} />))} */}
+                </div>
+            </div>
         </div>
     )
 }   

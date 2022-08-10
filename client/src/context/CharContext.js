@@ -10,7 +10,7 @@ export const CharProvider = ({
     const addCharacters = (characters) => {
         setCharacters(characters);
     }
-    
+
     const selectCharacter = (charId) => {
         return characters.find(x => x._id === charId) || {};
     };

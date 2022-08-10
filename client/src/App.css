@@ -1,7 +1,5 @@
 .App {
   background-image: url('../public/stars.jpg');
-  /* background-repeat: no-repeat; */
-  background-size: cover;
   margin-left: -8px;
   margin-right: -8px;
   
