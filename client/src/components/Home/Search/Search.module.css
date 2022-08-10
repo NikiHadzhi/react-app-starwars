@@ -36,9 +36,13 @@
     font-size: 25px;
 }
 
+.link:hover{
+    color: rgb(250, 167, 13);
+}
+
 .resultBox::-webkit-scrollbar {
     display: none;
-  }
+}
 
 .image {
     width: 100px;

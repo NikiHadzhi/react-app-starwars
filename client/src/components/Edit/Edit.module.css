@@ -70,6 +70,10 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
+.description::-webkit-scrollbar {
+    display: none;
+}
+
 form input, .selectMenu {
     height: 40px;
     border-radius: 10px;

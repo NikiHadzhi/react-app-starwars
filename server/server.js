@@ -1364,16 +1364,55 @@
                 "description": "Discovered as a slave on Tatooine by Qui-Gon Jinn and Obi-Wan Kenobi, Anakin Skywalker had the potential to become one of the most powerful Jedi ever. Some even believed he was the prophesied Chosen One who would bring balance to the Force.",
                 "_createdOn": 1617194210875
             },
-
             "b114ecb1-8b44-4ed8-85a3-36b030a34689": {
                 "_ownerId": "35c62d76-8152-4626-8712-eeb96381bea8",
                 "name": "R2-D2",
                 "height": "96",
                 "species": "droid",
-                "gender": "none",
+                "gender": "male",
                 "imgUrl": "https://lumiere-a.akamaihd.net/v1/images/r2-d2-main_f315b094.jpeg?region=273%2C0%2C951%2C536",
                 "description" : "A reliable and versatile astromech droid, R2-D2 has served Padmé Amidala, Anakin Skywalker, and Luke Skywalker in turn, showing great bravery in rescuing his masters and their friends from many perils. A skilled starship mechanic and fighter pilot's assistant, he has an unlikely but enduring friendship with the fussy protocol droid C-3PO.",
                 "_createdOn": 1617194210987
+            },
+            "9fb18c4d-871f-4e75-842e-e569a925be03": {
+                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
+                "name": "C-3PO",
+                "height": "175",
+                "species": "droid",
+                "gender": "male",
+                "imgUrl": "https://lumiere-a.akamaihd.net/v1/images/c-3po-main_417a2902.jpeg?region=176%2C0%2C951%2C536",
+                "description" : "C-3PO longs for more peaceful times, but his continued service to the Resistance — and his knowledge of more than seven million forms of communication — keeps the worry-prone droid in the frontlines of galactic conflict. Programmed for etiquette and protocol, Threepio was built by a young Anakin Skywalker, and has been a constant companion to astromech R2-D2",
+                "_createdOn": 1660105690285
+            },
+            "8e91ce1a-8ee1-4f25-87e9-f445561d53aa": {
+                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
+                "name": "Chewbacca",
+                "height": "228",
+                "species": "wookiee",
+                "gender": "male",
+                "imgUrl": "https://lumiere-a.akamaihd.net/v1/images/chewbacca-db-tlj_22d84d59.jpeg?region=0%2C0%2C1200%2C500",
+                "description" : "A legendary Wookiee warrior and Han Solo’s longtime co-pilot, Chewbacca continues to serve as faithful first mate to carry out daring missions against the First Order behind the controls of the Millennium Falcon. Known as Chewie to his closest friends, he was part of a core group of rebels who restored freedom to the galaxy during the reign of the Galactic Empire.",
+                "_createdOn": 1660105441642
+            },
+            "94b052bc-4556-4b96-b29e-657aaa2a4ce6": {
+                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
+                "name": "Han Solo",
+                "height": "180",
+                "species": "human",
+                "gender": "male",
+                "imgUrl": "https://lumiere-a.akamaihd.net/v1/images/han-solo-main_a4c8ff79.jpeg?region=0%2C0%2C1920%2C1080&width=960",
+                "description" : "Han Solo rose from an impoverished childhood on the mean streets of Corellia to become one of the heroes of the Rebel Alliance. As captain of the Millennium Falcon, Han and his co-pilot Chewbacca came to believe in the cause of galactic freedom, joining Luke Skywalker and Princess Leia Organa in the fight against the Empire.",
+                "_createdOn": 1660105172534
+            },
+            "1e2a009d-81ab-40a3-8b85-8ec15e8fcb41": {
+                "_ownerId": "847ec027-f659-4086-8032-5173e2f9c93a",
+                "name": "Yoda",
+                "height": "66",
+                "species": "unknown",
+                "gender": "male",
+                "imgUrl": "https://c4.wallpaperflare.com/wallpaper/899/504/890/star-wars-yoda-jedi-star-wars-episode-iii-the-revenge-of-the-sith-wallpaper-preview.jpg",
+                "description" : "Yoda was a legendary Jedi Master and stronger than most in his connection with the Force. Small in size but wise and powerful, he trained Jedi for over 800 years, playing integral roles in the Clone Wars, the instruction of Luke Skywalker, and unlocking the path to immortality.",
+                "_createdOn": 1660105011437
             },
         },
         likes :{
