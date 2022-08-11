@@ -12,7 +12,8 @@ export const Header = () => {
 
     const username = (email) => {
         let user = email.split('@');
-        return user[0];
+        let username = user[0].charAt(0).toUpperCase() + user[0].substring(1);
+        return username;
     }
 
     const { user } = useContext(AuthContext);
@@ -36,7 +37,7 @@ export const Header = () => {
 
                 <div className={style.greeting}>
                     {user.email
-                        ? <p>Hello, {username(user.email)}</p>
+                        ? <p>Hello, {username(user.email)}!</p>
                         : <p>Welcome, young padawan</p>
                     }
                 </div>
