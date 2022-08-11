@@ -1,4 +1,6 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
+import * as request from '../services/charService';
+
 
 export const CharContext = createContext();
 
@@ -6,6 +8,11 @@ export const CharProvider = ({
     children
 }) => {
     const [characters, setCharacters] = useState([]);
+
+    useEffect(() => {
+        request.getAll()
+        .then(data => setCharacters(data));
+    }, []);
 
     const addCharacters = (characters) => {
         setCharacters(characters);

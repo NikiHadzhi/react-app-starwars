@@ -1,18 +1,11 @@
-import { useContext, useEffect } from 'react';
+import { useContext } from 'react';
 import { NavLink } from 'react-router-dom' ;
 import { CharContext } from '../../context/CharContext';
 import { Character } from './Item/Character'
 import style from './Characters.module.css'
-import * as request from '../../services/charService';
 
 export const Characters = () => {
-    const { characters, addCharacters } = useContext(CharContext);
-
-    useEffect(() => {
-        request.getAll()
-            .then(res => res)
-            .then(data => addCharacters(data));
-    }, []);
+    const { characters } = useContext(CharContext);
 
     return (
         <>

@@ -11,7 +11,6 @@ export const Search = () => {
         const inputData = e.target.value.toLowerCase();
         if (inputData !== '') {
             const filteredData = characters.filter(x => x.name.toLowerCase().includes(inputData));
-            console.log(searchData);
             setSearchData(filteredData);
         } else {
             setSearchData([]);
@@ -19,18 +18,16 @@ export const Search = () => {
     }
 
     return (
-        <>
-            <div className={style.searchBox}>
-                <input type="text" placeHolder='Search character...' onChange={onSearchHandler} />
-                {searchData.length > 0 && (
-                    <div className={style.resultBox}>
-                        {searchData.map(x =>
-                            <NavLink to={`/catalog/details/${x._id}`} className={style.link}>{x.name}</NavLink>
-                        )}
-                    </div>
-                )}
+        <div className={style.searchBox}>
+            <input type="text" placeholder='Search character...' onChange={onSearchHandler} />
+            {searchData.length > 0 && (
+                <div className={style.resultBox}>
+                    {searchData.map(x =>
+                        <NavLink to={`/catalog/details/${x._id}`} key={x._id} className={style.link}>{x.name}</NavLink>
+                    )}
+                </div>
+            )}
 
-            </div>
-        </>
+        </div>
     )
 }
