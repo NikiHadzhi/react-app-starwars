@@ -1412,7 +1412,7 @@
                 "gender": "male",
                 "imgUrl": "https://c4.wallpaperflare.com/wallpaper/899/504/890/star-wars-yoda-jedi-star-wars-episode-iii-the-revenge-of-the-sith-wallpaper-preview.jpg",
                 "description" : "Yoda was a legendary Jedi Master and stronger than most in his connection with the Force. Small in size but wise and powerful, he trained Jedi for over 800 years, playing integral roles in the Clone Wars, the instruction of Luke Skywalker, and unlocking the path to immortality.",
-                "_createdOn": 1660105011437
+                "_createdOn": 1660105011437,
             },
         },
         likes :{

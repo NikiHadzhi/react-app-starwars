@@ -31,6 +31,7 @@ function App() {
 						<Routes>
 							<Route path='/' element={<Home />} />
 							<Route path='/catalog' element={<Characters />} />
+							<Route path='/catalog/details/:charId' element={<CharDetails />} />
 							<Route element={<PublicRoute />}>
 								<Route path='/login' element={<Login />} />
 								<Route path='/register' element={<Register />} />
@@ -38,7 +39,6 @@ function App() {
 							<Route element={<PrivateRoute />}>
 								<Route path='/create' element={<Create />} />
 								<Route path='/logout' element={<Logout />} />
-								<Route path='/catalog/details/:charId' element={<CharDetails />} />
 								<Route path='/catalog/details/edit/:charId' element={<Edit />} />
 								<Route path='/catalog/details/delete/:charId' element={<Delete />} />
 							</Route>

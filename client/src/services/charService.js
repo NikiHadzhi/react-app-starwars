@@ -25,3 +25,5 @@ export const getMostLiked = (charId) => request.get(`/data/likes/?where=charId%3
 export const getRecentlyAdded = () => request.get('/data/characters?sortBy=_createdOn%20desc');
 
 //http://localhost:3030/data/likes/?where=charId%3D%22126777f5-3277-42ad-b874-76d043b069cb%22&load=author%3D_ownerId%3Ausers&count
+
+//http://localhost:3030/data/likes?sortBy=_createdOn%20desc
