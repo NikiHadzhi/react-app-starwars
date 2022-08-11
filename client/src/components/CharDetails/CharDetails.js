@@ -31,7 +31,7 @@ export const CharDetails = () => {
             setPublicationLikedByUser(userLikedData);
         })();
 
-    }, [charId, publicationLikes, user.id]);
+    }, [ charId, publicationLikes, user.id]);
 
     const onActionHandler = async (e) => {
         if (e.target.name === 'like') {
