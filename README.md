@@ -1,4 +1,4 @@
-# Getting Started with Create React App
+# This is a project with educational purposes. It's build with React and Softuni practice server.
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
