@@ -23,7 +23,7 @@ see details for each of them, like or dislike them, edit or delete also is avail
 
 ## The architecture of the app
 
-The architecture is follows the react.js patterns. The main App component task is to render and route. All other files are stored in src folder. You can find all of the componenets inn components folder. Every commponent have its own folder with script and css.module file. In context folder you would find two files, one for managing the characters, and one for users. You will find custom hooks in the hooks folder. All of the requests to the server are  stored in the service folder.
+The architecture is follows the react.js patterns. The main App component task is to render and route. All other files are stored in src folder. You can find all of the componenets in components folder. Every commponent have its own folder with script and css.module file. In context folder you would find two files, one for managing the characters, and one for users. You will find custom hooks in the hooks folder. All of the requests to the server are  stored in the service folder.
 
 
 ## Third party libraries
