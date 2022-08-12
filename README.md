@@ -1,70 +1,31 @@
 # This is a project with educational purposes. It's build with React and Softuni practice server.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can find more about how does this server works in the docs: https://github.com/softuni-practice-server/softuni-practice-server
 
-## Available Scripts
+## How to start the app
 
-In the project directory, you can run:
+After download and unzip the file you will get two main folders - client and server. The setup is easy:
+
+### `node server.js`
+
+Type in the terminal of you VSC 'node server.js' in server directory to fire up the server.
+You can sent requests on http://localhost:3030, and track your data in the admin panel on http://localhost:3030/admin.
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Type in the terminal of you VSC 'npm start' in client directory to fire up the client.
+You can access the app on http://localhost:3000.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+# The App
 
-### `npm test`
+In this app you will find a bunch of star wars characters. It have implement CRUD operations, so you can see all of them in the catalog,
+see details for each of them, like or dislike them, edit or delete also is available, only if you are the creator of this character.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## The architecture of the app
 
-### `npm run build`
+The architecture is follows the react.js patterns. The main App component task is to render and route. All other files are stored in src folder. You can find all of the componenets inn components folder. Every commponent have its own folder with script and css.module file. In context folder you would find two files, one for managing the characters, and one for users. You will find custom hooks in the hooks folder. All of the requests to the server are  stored in the service folder.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Third party libraries
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+The only addition library that is used in this app is React Router.
