@@ -8,7 +8,6 @@ import * as request from '../../services/charService';
 export const Characters = () => {
     const { characters } = useContext(CharContext);
     const [chars, setChars] = useState(characters);
-console.log(chars);
 
     useEffect(() => {
         request.getAll()
