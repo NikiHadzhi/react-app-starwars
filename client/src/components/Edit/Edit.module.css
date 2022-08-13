@@ -45,11 +45,11 @@ form input {
     resize: none;
 }
 
-.btns {
+.btn {
     margin: 15px auto;
 }
 
-button {
+.btn button {
     background-color: rgb(47, 47, 47);
     color: white;
     border: none;

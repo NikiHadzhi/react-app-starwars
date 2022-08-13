@@ -167,7 +167,7 @@ export const Edit = () => {
                         </p>
                     }
                     <div className={style.btn}>
-                        <button type="submit" disabled={isAllDataValid}>Edit</button>
+                        <button type="submit" disabled={isAllDataValid}>Save</button>
                     </div>
                 </form>
             </div>
