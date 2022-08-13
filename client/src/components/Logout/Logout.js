@@ -6,17 +6,17 @@ import * as authService from '../../services/authService';
 
 export const Logout = () => {
     const navigate = useNavigate();
-    const {user, userLogout} = useContext(AuthContext);
+    const {userLogout} = useContext(AuthContext);
 
     useEffect(() => {
-        authService.logout(user.accessToken)
+        authService.logout()
             .then(() => {
                 userLogout();
                 navigate('/');
             }).catch((error) => {
                 alert(error)
             })
-    }, [navigate, user.accessToken, userLogout])
+    }, [navigate, userLogout])
 
     return null;
 }
