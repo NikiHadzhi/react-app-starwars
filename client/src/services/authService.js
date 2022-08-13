@@ -4,7 +4,6 @@ import { setUserData } from './userData.js';
 const endpoints = {
     login: '/users/login',
     register: '/users/register',
-    logout: '/users/logout'
 }
 
 export const login = async(email, password) => {
