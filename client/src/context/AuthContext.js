@@ -9,12 +9,10 @@ export const AuthProvider = ({
     const [auth, setAuth] = useLocalStorage('user', {});
 
     const userLogin = (userData) => {
-        localStorage.setItem('user', JSON.stringify(userData));
         setAuth(userData);
     }
 
     const userLogout = () => {
-        localStorage.removeItem('user');
         setAuth({});
     }
 
