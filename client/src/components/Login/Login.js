@@ -27,7 +27,6 @@ export const Login = () => {
                 navigate('/');
             }).catch(error => {
                 e.target.reset();
-                alert(error.message);
             });
     };
 
